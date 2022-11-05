@@ -4,11 +4,12 @@
   "description": "El serveroooo ",
   "main": "dist/index.js",
   "scripts": {
-   "build": "tsc",
+    "watch": "tsc -w",
+    "build": "tsc",
     "prestart": "npm run build",
-    "start": "node ."
-
-},
+    "start": "node .",
+    "devStart": "nodemon ."
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -17,7 +18,12 @@
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
     "eslint": "^8.26.0",
+    "nodemon": "^2.0.20",
     "prettier": "^2.7.1",
     "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0"
   }
 }

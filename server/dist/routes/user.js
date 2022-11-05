@@ -8,6 +8,6 @@ const user_1 = require("../controllers/user");
 const router = express_1.default.Router();
 router.get('/', (req, res) => { res.send("hello this is route"); });
 router.post('/register', user_1.register);
-router.post('logIn', user_1.logIn);
+router.post('/logIn', user_1.logIn);
 exports.default = router;
 //# sourceMappingURL=user.js.map
